@@ -4,7 +4,7 @@
 
 #ifndef DATASTRUCTURE_LINKEDLIST_H
 #define DATASTRUCTURE_LINKEDLIST_H
-#include"std.h"
+#include"../std.h"
 #define ElemType int
 typedef struct LNode{
     ElemType elem;

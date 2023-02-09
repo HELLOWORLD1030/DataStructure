@@ -4,7 +4,7 @@
 
 #ifndef DATASTRUCTURE_LINEARLIST_H
 #define DATASTRUCTURE_LINEARLIST_H
-#include "std.h"
+#include "../std.h"
 #define LIST_INIT_SIZE 100
 #define LISTINCREMENT 10
 #define ElemType int

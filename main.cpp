@@ -2,8 +2,8 @@
 // Created by HELLO_WORLD on 2/3/2023.
 //
 #include <iostream>
-#include "LinearList.h"
-#include "LinkedList.h"
+#include "List/LinearList.h"
+#include "List/LinkedList.h"
 int main() {
 //    线性表
 //    SqList L;
