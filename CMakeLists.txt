@@ -3,5 +3,5 @@ project(DataStructure)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(DataStructure main.cpp List/LinearList.h List/LinearList.cpp List/LinkedList.cpp List/LinkedList.h List/DoubleLinkedList.cpp List/DoubleLinkedList.h Stack/SequenceStack.cpp Stack/SequenceStack.h)
+add_executable(DataStructure main.cpp List/LinearList.h List/LinearList.cpp List/LinkedList.cpp List/LinkedList.h List/DoubleLinkedList.cpp List/DoubleLinkedList.h Stack/SequenceStack.cpp Stack/SequenceStack.h Quene/SequenceQuene.cpp Quene/SequenceQuene.h Stack/LinkedStack.cpp Stack/LinkedStack.h)
 #add_executable()

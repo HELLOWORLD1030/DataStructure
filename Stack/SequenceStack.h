@@ -16,6 +16,6 @@ typedef struct {
 Status InitStack(SqStack &S);
 Status GetTop(SqStack S,SElemType &e);
 Status Push(SqStack &S,SElemType e);
-Status Pop(SqStack &S,SElemType &e);
-
+bool StackEmpty(SqStack S);
+void Converse();
 #endif //DATASTRUCTURE_SEQUENCESTACK_H
