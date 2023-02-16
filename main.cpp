@@ -6,7 +6,8 @@
 #include "List/LinkedList.h"
 #include "Stack/SequenceStack.h"
 #include "Quene/SequenceQuene.h"
-
+#include "Quene/LinkedQuene.h"
+#include "Quene/SequenceLoopQuene.h"
 void SequenceList(){
     //    线性表
     SqList L;
@@ -61,7 +62,38 @@ void Quene(){
     DeQuene(Q,e);
     printf("%d",e);
 }
+void LinkedQuene(){
+    //链队列
+     LinkQuene Q;
+     InitQuene(Q);
+    EnQuene(Q,1);
+    EnQuene(Q,2);
+    int e;
+
+    GetHead(Q,e);
+    printf("%d\n",e);
+    printf("%d", QueneLength(Q));
+//    DeQuene(Q,e);
+//    printf("%d\n",e);
+}
+void SequenceLoopQuene(){
+    //顺序循环队列
+    SqLoopQuene Q;
+    InitQuene(Q);
+    Enquene(Q,1);
+    Enquene(Q,2);
+    printf("length:%d\n", QueneLength(Q));
+    int e;
+    GetHead(Q,e);
+    printf("head: %d\n",e);
+    Dequene(Q,e);
+    printf("de: %d\n",e);
+    GetHead(Q,e);
+    printf("head: %d\n",e);
+}
 int main() {
-    Quene();
+//    Quene();
+//    LinkedQuene();
+    SequenceLoopQuene();
     return 0;
 }
