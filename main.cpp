@@ -8,6 +8,8 @@
 #include "Quene/SequenceQuene.h"
 #include "Quene/LinkedQuene.h"
 #include "Quene/SequenceLoopQuene.h"
+#include "String/HeapString.h"
+#include "String/SequenceString.h"
 void SequenceList(){
     //    线性表
     SqList L;
@@ -91,9 +93,29 @@ void SequenceLoopQuene(){
     GetHead(Q,e);
     printf("head: %d\n",e);
 }
+void SequenceString(){
+    SSTring S,T;
+    InitString(S, (unsigned char *) "1212314");
+    InitString(T, (unsigned char *) "14");
+    printf("%d,%d\n",S[0],T[0]);
+    int index= Index(S,T,1);
+    printf("%d",index);
+}
+void HeapString(){
+    //堆构造串
+    HString S;
+    StrAssign(S,"djsadjlkadj");
+    HString T= SubString(S,2,3);
+    for(int i=0;i<3;i++){
+        printf("%c",T.ch[i]);
+
+    }
+}
 int main() {
 //    Quene();
 //    LinkedQuene();
-    SequenceLoopQuene();
+//    SequenceLoopQuene();
+//    HeapString();
+SequenceString();
     return 0;
 }
