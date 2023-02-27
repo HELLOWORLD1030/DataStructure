@@ -11,4 +11,5 @@ bool Concat(SSTring &T,SSTring S1,SSTring S2);
 Status SubString(SSTring &T,SSTring S,int pos,int len);
 int Index(SSTring S,SSTring T,int pos);
 Status  InitString(SSTring &S,unsigned char* chars);
+int KMP();
 #endif //DATASTRUCTURE_SEQUENCESTRING_H

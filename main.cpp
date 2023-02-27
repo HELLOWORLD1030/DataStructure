@@ -10,6 +10,7 @@
 #include "Quene/SequenceLoopQuene.h"
 #include "String/HeapString.h"
 #include "String/SequenceString.h"
+#include "Matrix/SparseMatrix.h"
 void SequenceList(){
     //    线性表
     SqList L;
@@ -111,11 +112,22 @@ void HeapString(){
 
     }
 }
+void SparseMatrix(){
+    //稀疏矩阵
+    TSMatrix M,N,Q;
+    CreateSMatrix(M);
+//    CopySMatrix(M,N);
+    CreateSMatrix(N);
+    AddSMatrix(M,N,Q);
+//    printf("%d,d%d,%d\n",N.mu,N.tu,N.nu);
+    PrintSMatrix(Q);
+}
 int main() {
 //    Quene();
 //    LinkedQuene();
 //    SequenceLoopQuene();
 //    HeapString();
-SequenceString();
+//SequenceString();
+SparseMatrix();
     return 0;
 }

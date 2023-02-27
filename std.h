@@ -7,4 +7,6 @@
 #define Status int
 #define OK 1
 #define FAIL 0
+#define UNDERFLOW -2
+#define OVERFLOW -1
 #endif //DATASTRUCTURE_STD_H
