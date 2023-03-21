@@ -16,5 +16,7 @@ Status GetElem(LinkList L,int i,ElemType &e);
 Status LinkListInsert(LinkList &L,int i,ElemType e);
 Status LinkListDelete(LinkList &L,int i,ElemType &e);
 Status MergeList(LinkList &La,LinkList &Lb,LinkList &Lc);
+int  LocateElem(LinkList L,ElemType e);
+int CountX(LinkList &HL,ElemType x);
 int sum(int num,...);
 #endif //DATASTRUCTURE_LINKEDLIST_H

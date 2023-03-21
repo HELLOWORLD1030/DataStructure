@@ -106,5 +106,30 @@ Status MergeList(LinkList &La,LinkList &Lb,LinkList &Lc){
     return OK;
 
 }
+int CountX(LinkList &HL,ElemType x){
+    if(!HL->next)return 0;
+    int count=0;
+    LNode *p=HL->next;
+    while (p){
+        if(p->elem==x){
+            count++;
+        }
+        p=p->next;
+    }
+    return count;
+}
+int  LocateElem(LinkList L,ElemType e){
+    if(!L||!L->next)return FAIL;
+    LNode *p=L->next;
+    int count=0;
+    while (p){
+        count++;
+        if(p->elem==e){
+            return count;
+        }
+        p=p->next;
+    }
+    return -1;
+}
 
 

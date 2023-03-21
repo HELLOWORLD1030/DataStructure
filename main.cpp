@@ -11,6 +11,9 @@
 #include "String/HeapString.h"
 #include "String/SequenceString.h"
 #include "Matrix/SparseMatrix.h"
+#include "Tree/LinkedBiTree.h"
+#include "Exam/QuickSort.h"
+#include "Exam/AandB.h"
 void SequenceList(){
     //    线性表
     SqList L;
@@ -37,20 +40,21 @@ void LinedList(){
     ////链表
     LinkList L,L2,L3;
 //    printf("%d",sum(5,1,2,3,4,5));
-    InitLinkedList(L,5,1,2,3,4,5);
+    InitLinkedList(L,9,1,2,3,4,5,9,8,7,6);
     InitLinkedList(L2,5,6,7,8,9,10);
-    Print(L);
-    int e;
-    printf("\n");
-    LinkListInsert(L,1,10);
-    Print(L);
-    printf("\n");
-    LinkListDelete(L,1,e);
-    Print(L);
-    printf("\n");
-//    printf("%d", e);
-    MergeList(L,L2,L3);
-    Print(L3);
+//    Print(L);
+//    int e;
+//    printf("\n");
+//    LinkListInsert(L,1,10);
+//    Print(L);
+//    printf("\n");
+//    LinkListDelete(L,1,e);
+//    Print(L);
+//    printf("\n");
+////    printf("%d", e);
+//    MergeList(L,L2,L3);
+//    Print(L3);
+   printf("%d",CountX(L,1)) ;
 }
 void Stack(){
     //栈
@@ -122,12 +126,36 @@ void SparseMatrix(){
 //    printf("%d,d%d,%d\n",N.mu,N.tu,N.nu);
     PrintSMatrix(Q);
 }
+void BinaryTree(){
+    //二叉树
+    BiTree T;
+    CreateBiTree(T);
+    ChangeLeftAndRight(T);
+    PreOrderTraverse(T,PrintNode);
+
+}
+void Exam(){
+    int a[]={5,6,3,2,1,7};
+//    sort(a,6);
+    LinkList L,L2,L3;
+//    printf("%d",sum(5,1,2,3,4,5));
+    InitLinkedList(L,11,1,2,3,4,5,5,9,8,7,6,6);
+    InitLinkedList(L2,5,6,7,8,9,10);
+//    And(L,L2,L3);
+    Delete(L);
+    Print(L);
+
+}
 int main() {
 //    Quene();
 //    LinkedQuene();
 //    SequenceLoopQuene();
 //    HeapString();
 //SequenceString();
-SparseMatrix();
+//SparseMatrix();
+
+BinaryTree();
+//LinedList();
+//Exam();
     return 0;
 }
